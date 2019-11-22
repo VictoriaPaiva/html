@@ -1,82 +1,115 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="description" content="Blog para falar sobre o meu codigo de rpg">
-	<meta name="keywords" content="HTML, CSS, JavaScript">
-	<meta name="author" content="Victória Paiva">
-	<title>Document</title>
-	<style>
-		#body{
-			background-image: url('https://dicionario.priberam.org/images/dplp/preto.jpg');
-			background-repeat: no-repeat;
-			background-attachment: fixed;
-			background-size: cover;
-		}
-		/*Alterar o estilo*/
-	ul{
-		list-style: none;
-		display: flex;
-		justify-content: center;
-	}
-	ul li{
-		display: inline;/*tornar a lista em linha*/
-		padding: 3%;
-	}
-	a{/*por no CSS*/
-		text-decoration: none;
-		color:black(0,0,0);
-	}
-	img {/*por no CSS*/
-		height: 200px;
-		width: 400px;
-	}
-	.center{
-		display: flex;
-		justify-content: center;
-	}
-	.titulo{
-		display: flex;
-		justify-content: center;
-		color:rgb(86, 11, 148);
-	}
-	.textoPrincipal{
-		display: flex;
-		justify-content: center;
-		color: white;
-	}
 	
-	</style>
-</head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-<body id="body">
-	<!--comentarios-->
-	<ul class="textoPrincipal">
-		<li>
-				<form>
-						
-						<button type="submit">Home</button>
-					</form>
-			<a href="https://www.google.com.br" target="_blank">Home</a></li>
-		<li>Sobre</li>
-		<li>Outros </li>
-	</ul>
-	<figure class="titulo">
-			<img src="IMGdeCodigo.jpg" alt="imagem de uma tela de codigo de programação " title="Super tela de código">
+	<link rel="stylesheet" href="style.css">
+	
+	<title>Document</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+		<a class="navbar-brand" href="#">Studio283</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+	  
+		<div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+		  <ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+			  <a class="nav-link font" href="#"> Home <span class="sr-only">(página atual)</span></a>
+			</li>
+			<!--menu da nav , com o dropdown-->
+			<li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Fine Line
+			  </a>
+			  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<a class="dropdown-item" href="#">Colorido</a>
+				<a class="dropdown-item" href="#">Preto e cinza</a>
+				<a class="dropdown-item" href="#">Sombreado</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#">Flash Day</a>
+			  </div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  Realismo
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="#">Colorido</a>
+					<a class="dropdown-item" href="#">Preto e cinza</a>
+					<a class="dropdown-item" href="#">Sombreado</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#">Flash Day</a>
+				  </div>
+			  </li>
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  Frase
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="#">Colorido</a>
+					<a class="dropdown-item" href="#">Preto e cinza</a>
+					<a class="dropdown-item" href="#">Sombreado</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="#">Flash Day</a>
+				  </div>
+			  </li>
 			
-	</figure>
-	<hi class="titulo"><strong>Meu super código de RPG</strong> </hi>
-	<p class="textoPrincipal">eu fiz um jogo RPG que ficou super top e foi muito difícil de fazer, coloque um video dele no meu story do insta, face e do status do whats , tenho que começar a parar de falar dele , por que já ta ficando chato , mas eue to muito feliz por que ele deu certo ,então vão ter que me aguentar falando dele mais um pouco</p>
-	<p class="textoPrincipal">Posted by: Victória Paiva</p>
-			<h4 class="textoPrincipal">Informações de contato: </h4>
-	<footer class="textoPrincipal">
-		<ul>
-			<li>Instagram: bla bla bla</li>
-			<li>Facebook: blablablablabla</li>
-			<li>WhatsApp: 1654465465464654</li>
-		</ul>
-	</footer>
+		  </ul>
+		  <form class="form-inline my-2 my-lg-0">
+			<input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+		  </form>
+		</div>
+	  </nav>
+	  <div class="carousel-item">
+  <img src="ft1.jpg" alt="...">
+  <div class="carousel-caption d-none d-md-block">
+    <h5>foto da tattoo</h5>
+    <p>a foto</p>
+  </div>
+</div>
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+	<ol class="carousel-indicators">
+	  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+	  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+	  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	</ol>
+	<div class="carousel-inner">
+	  <div class="carousel-item active">
+		<img class="d-block w-100" src=".../800x400?auto=yes&bg=777&fg=555&text=Primeiro Slide" alt="Primeiro Slide">
+	  </div>
+	  <div class="carousel-item">
+		<img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Segundo Slide" alt="Segundo Slide">
+	  </div>
+	  <div class="carousel-item">
+		<img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Terceiro Slide" alt="Terceiro Slide">
+	  </div>
+	</div>
+	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+	  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	  <span class="sr-only">Anterior</span>
+	</a>
+	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+	  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	  <span class="sr-only">Próximo</span>
+	</a>
+  </div>
+<div class="carousel-item">
+	<img src="ft2.jpg" alt="...">
+	<div class="carousel-caption d-none d-md-block">
+	  <h5>seunda foto da tattoo</h5>
+	  <p>ft2</p>
+	</div>
+  </div>
+	  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
