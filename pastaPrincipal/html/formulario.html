@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <LINK REL="SHORTCUT ICON" href="../imagens/studio 283.jpg">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Formulário-Studio 283</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-eu">
+        <div class="logo mr-3">
+            <img class="imagemLogo" src="../imagens/studio 283.jpg" alt="Logo do Studio 283">
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+            aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link font text-white" href="../../index.html"> Home <span class="sr-only">(página
+                            atual)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link font text-white" href="../aulaDeFront/pastaPrincipal/html/formulario.html">
+                        Formulário <span class="sr-only">(página atual)</span></a>
+                </li>
+                <!--menu da nav , com o dropdown-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Fine Line </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Colorido</a>
+                        <a class="dropdown-item" href="#">Preto e cinza</a>
+                        <a class="dropdown-item" href="#">Sombreado</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"> Flash Day </a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Realismo </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Colorido</a>
+                        <a class="dropdown-item" href="#">Preto e cinza</a>
+                        <a class="dropdown-item" href="#">Sombreado</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Flash Day</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Frase </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Colorido</a>
+                        <a class="dropdown-item" href="#">Preto e cinza</a>
+                        <a class="dropdown-item" href="#">Sombreado</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Flash Day</a>
+                    </div>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0 ">
+                <input class="form-control mr-sm-2 " type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-outline-dark my-2 my-sm-0 text-white" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <form class="form">
+            <div class="form-group">
+                <label for="inputAddress">Nome Completo</label>
+                <input type="text" class="form-control" id="inputAddress">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Senha</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Endereço</label>
+                <input type="text" class="form-control" id="inputAddress">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">Cidade</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">Estado</label>
+                    <select id="inputState" class="form-control">
+                        <option>...</option>
+                        <option>São Paulo</option>
+                        <option>Rio de Janeiro</option>
+                        <option>Outro Estado</option>
+                        <option>Estado diferente</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Concordo com os termos de uso
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-dark text-white">Cadastrar</button>
+        </form>
+    </div>
+    <div class="footer mt-5">
+        <footer>
+            <div class="footer-copyright text-center py-3">© 2019 Copyright:
+                <a href="../../index.html"> Studio283Tattoo</a>
+            </div>
+
+    </div>
+    </footer>
+    </div>
+</body>
+
+</html>
